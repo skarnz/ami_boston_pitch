@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './index.css';
-import { MapPin, Globe } from 'lucide-react';
+import { MapPin, Globe, ExternalLink } from 'lucide-react';
+import * as Tabs from '@radix-ui/react-tabs';
 
 function App() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+  
   useEffect(() => {
     // Animate elements on load
     const heroContent = document.querySelector('.hero-content');
@@ -19,9 +22,102 @@ function App() {
       }
     };
 
+    // Handle resize for mobile detection
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 992);
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
+
+  const venues = [
+    {
+      id: 'marriott',
+      name: 'Boston Marriott Cambridge',
+      distance: 'Walk-time to MIT: 2 min',
+      space: '12k sq ft / 10 rms',
+      fb: 'Seasonal New England buffets',
+      spend: '$48K',
+      pros: [
+        'Center of Kendall',
+        'Red Line',
+        'waived rental'
+      ],
+      url: 'https://www.marriott.com/boscb'
+    },
+    {
+      id: 'charles',
+      name: 'The Charles Hotel',
+      distance: '10 min taxi',
+      space: '18k sq ft / 18 rms',
+      fb: 'Farm-to-table menus',
+      spend: '$59K',
+      pros: [
+        'Harvard Sq. vibe',
+        'jazz bar',
+        'spacious suites'
+      ],
+      url: 'https://www.charleshotel.com'
+    },
+    {
+      id: 'hyatt',
+      name: 'Hyatt Regency Boston/Cambridge',
+      distance: '10 min walk via bridge',
+      space: '25k sq ft ballroom',
+      fb: 'River-view dining',
+      spend: '$65K',
+      pros: [
+        'Skyline ballroom',
+        'largest capacity'
+      ],
+      url: 'https://www.hyatt.com/en-US/hotel/massachusetts/hyatt-regency-boston-cambridge/bosrc'
+    },
+    {
+      id: 'courtyard',
+      name: 'Courtyard Marriott Cambridge',
+      distance: '15 min walk',
+      space: '6.7k sq ft',
+      fb: 'Lean pricing',
+      spend: '$41K',
+      pros: [
+        'Biggest budget buffer',
+        'Marriott points'
+      ],
+      url: 'https://www.marriott.com/boscy'
+    },
+    {
+      id: 'microsoft',
+      name: 'Microsoft NERD Center',
+      distance: 'onsite',
+      space: '180-seat forum + 5 pods',
+      fb: 'Bring-in catering',
+      spend: '$22K',
+      pros: [
+        'Space free',
+        'tech vibe'
+      ],
+      url: 'https://www.microsoftnewengland.com'
+    },
+    {
+      id: 'museum',
+      name: 'Museum of Science – Skyline Room',
+      distance: '12 min taxi',
+      space: '270° glass space',
+      fb: 'In-house catering',
+      spend: '$55K',
+      pros: [
+        'Iconic view',
+        'pairs with AI exhibits'
+      ],
+      url: 'https://www.mos.org'
+    }
+  ];
 
   return (
     <div className="app">
@@ -47,7 +143,6 @@ function App() {
         </div>
       </section>
       
-      {/* Why Boston / Why Now Section */}
       <section id="why-boston" className="why-boston">
         <div className="container">
           <h2 className="section-title">
@@ -136,7 +231,6 @@ function App() {
         </div>
       </section>
       
-      {/* Theme 2026 Section */}
       <section id="theme" className="theme-section">
         <div className="container">
           <h2 className="theme-title">𝟮𝟬𝟮𝟲 Theme — Becoming Students Again</h2>
@@ -190,7 +284,6 @@ function App() {
         </div>
       </section>
       
-      {/* Program-at-a-Glance Schedule Section */}
       <section id="schedule" className="schedule-section">
         <div className="container">
           <h2 className="schedule-title">🗓 Program-at-a-Glance</h2>
@@ -240,14 +333,12 @@ function App() {
         </div>
       </section>
       
-      {/* Pre-Workshop Super-Lab Menu Section */}
       <section id="labs" className="labs-section">
         <div className="container">
           <h2 className="labs-title">🔬 Pre-Workshop 'Super-Lab' Menu</h2>
           <div className="labs-title-underline"></div>
           
           <div className="labs-grid" role="list">
-            {/* Lab Card 1 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#1</div>
               <h4 className="lab-title">MassRobotics</h4>
@@ -266,7 +357,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 2 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#2</div>
               <h4 className="lab-title">IBM / MIT Watson AI Lab</h4>
@@ -285,7 +375,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 3 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#3</div>
               <h4 className="lab-title">Harvard Wyss Institute</h4>
@@ -304,7 +393,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 4 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#4</div>
               <h4 className="lab-title">Greentown Labs</h4>
@@ -323,7 +411,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 5 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#5</div>
               <h4 className="lab-title">MIT Museum MakerHub</h4>
@@ -342,7 +429,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 6 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#6</div>
               <h4 className="lab-title">Microsoft Garage @ NERD</h4>
@@ -361,7 +447,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 7 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#7</div>
               <h4 className="lab-title">Affectiva / Smart Eye</h4>
@@ -380,7 +465,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 8 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#8</div>
               <h4 className="lab-title">Babson AI Generator Lab</h4>
@@ -406,10 +490,93 @@ function App() {
         </div>
       </section>
       
-      {/* Other page sections will go here */}
+      <section id="venues" className="venues-section">
+        <div className="container">
+          <h2 className="venues-title">🏨 Hotel & Space Short-List</h2>
+          <p className="venues-intro">
+            All venues are within a 15-minute walk of MIT labs or provide iconic Boston views. 
+            Meeting spend estimates include two-day F&B, basic AV, hospitality-suite bar, bus transport, 
+            and 30% service/tax; guest rooms are attendee-paid.
+          </p>
+
+          {isMobile ? (
+            <div className="venues-accordion">
+              {venues.map((venue) => (
+                <details key={venue.id} className="venue-details">
+                  <summary className="venue-summary">{venue.name}</summary>
+                  <div className="venue-content">
+                    <VenueContent venue={venue} />
+                  </div>
+                </details>
+              ))}
+            </div>
+          ) : (
+            <Tabs.Root className="venues-tabs" defaultValue={venues[0].id}>
+              <Tabs.List className="venues-tab-list" aria-label="Venue options">
+                {venues.map((venue) => (
+                  <Tabs.Trigger
+                    key={venue.id}
+                    className="venues-tab-trigger"
+                    value={venue.id}
+                  >
+                    {venue.name}
+                  </Tabs.Trigger>
+                ))}
+              </Tabs.List>
+              
+              {venues.map((venue) => (
+                <Tabs.Content
+                  key={venue.id}
+                  className="venues-tab-content"
+                  value={venue.id}
+                >
+                  <VenueContent venue={venue} />
+                </Tabs.Content>
+              ))}
+            </Tabs.Root>
+          )}
+        </div>
+      </section>
+      
       <div className="content-placeholder">
         <p>Scroll down to see more content...</p>
       </div>
+    </div>
+  );
+}
+
+function VenueContent({ venue }) {
+  return (
+    <div className="venue-details-content">
+      <h3 className="venue-name">
+        {venue.name}
+        <a
+          href={venue.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open ${venue.name} website in new tab`}
+        >
+          <ExternalLink size={20} className="external-link-icon" />
+        </a>
+      </h3>
+      <p className="venue-distance">{venue.distance}</p>
+      <p className="venue-space">{venue.space}</p>
+      <p className="venue-fb"><em>{venue.fb}</em></p>
+      <p className="venue-spend">{venue.spend}</p>
+      <ul className="venue-pros">
+        {venue.pros.map((pro, index) => (
+          <li key={index}>● {pro}</li>
+        ))}
+      </ul>
+      <a
+        href={venue.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="venue-cta"
+        aria-label={`Visit ${venue.name} website`}
+      >
+        Visit Website
+      </a>
     </div>
   );
 }
