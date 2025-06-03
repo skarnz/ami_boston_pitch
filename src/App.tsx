@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.css';
 import { MapPin, Globe, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import * as Tabs from '@radix-ui/react-tabs';
