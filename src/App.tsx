@@ -240,6 +240,172 @@ function App() {
         </div>
       </section>
       
+      {/* Pre-Workshop Super-Lab Menu Section */}
+      <section id="labs" className="labs-section">
+        <div className="container">
+          <h2 className="labs-title">🔬 Pre-Workshop 'Super-Lab' Menu</h2>
+          <div className="labs-title-underline"></div>
+          
+          <div className="labs-grid" role="list">
+            {/* Lab Card 1 */}
+            <div className="lab-card" role="listitem">
+              <div className="lab-badge">#1</div>
+              <h4 className="lab-title">MassRobotics</h4>
+              <p className="lab-desc">Drive a cobot & drone-cage demo.</p>
+              <div className="lab-footer">
+                <span className="lab-location">SEAPORT</span>
+                <a 
+                  href="https://massrobotics.org" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Open MassRobotics website"
+                  className="lab-link"
+                >
+                  ↗
+                </a>
+              </div>
+            </div>
+            
+            {/* Lab Card 2 */}
+            <div className="lab-card" role="listitem">
+              <div className="lab-badge">#2</div>
+              <h4 className="lab-title">IBM / MIT Watson AI Lab</h4>
+              <p className="lab-desc">Hands-on neuro-symbolic AI sandbox.</p>
+              <div className="lab-footer">
+                <span className="lab-location">KENDALL SQ.</span>
+                <a 
+                  href="https://www.ibm.com/watson/mit/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Open IBM-MIT Watson AI Lab website"
+                  className="lab-link"
+                >
+                  ↗
+                </a>
+              </div>
+            </div>
+            
+            {/* Lab Card 3 */}
+            <div className="lab-card" role="listitem">
+              <div className="lab-badge">#3</div>
+              <h4 className="lab-title">Harvard Wyss Institute</h4>
+              <p className="lab-desc">Soft-robotics & organ-on-chip biotech.</p>
+              <div className="lab-footer">
+                <span className="lab-location">HARVARD SQ.</span>
+                <a 
+                  href="https://wyss.harvard.edu" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Open Harvard Wyss Institute website"
+                  className="lab-link"
+                >
+                  ↗
+                </a>
+              </div>
+            </div>
+            
+            {/* Lab Card 4 */}
+            <div className="lab-card" role="listitem">
+              <div className="lab-badge">#4</div>
+              <h4 className="lab-title">Greentown Labs</h4>
+              <p className="lab-desc">Founder reverse-pitches climatetech.</p>
+              <div className="lab-footer">
+                <span className="lab-location">SOMERVILLE</span>
+                <a 
+                  href="https://greentownlabs.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Open Greentown Labs website"
+                  className="lab-link"
+                >
+                  ↗
+                </a>
+              </div>
+            </div>
+            
+            {/* Lab Card 5 */}
+            <div className="lab-card" role="listitem">
+              <div className="lab-badge">#5</div>
+              <h4 className="lab-title">MIT Museum MakerHub</h4>
+              <p className="lab-desc">Prototype kinetic art with AI co-pilot.</p>
+              <div className="lab-footer">
+                <span className="lab-location">KENDALL SQ.</span>
+                <a 
+                  href="https://mitmuseum.mit.edu" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Open MIT Museum website"
+                  className="lab-link"
+                >
+                  ↗
+                </a>
+              </div>
+            </div>
+            
+            {/* Lab Card 6 */}
+            <div className="lab-card" role="listitem">
+              <div className="lab-badge">#6</div>
+              <h4 className="lab-title">Microsoft Garage @ NERD</h4>
+              <p className="lab-desc">Build a no-code AI app in 90 min.</p>
+              <div className="lab-footer">
+                <span className="lab-location">KENDALL SQ.</span>
+                <a 
+                  href="https://www.microsoftnewengland.com/garage/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Open Microsoft Garage @ NERD website"
+                  className="lab-link"
+                >
+                  ↗
+                </a>
+              </div>
+            </div>
+            
+            {/* Lab Card 7 */}
+            <div className="lab-card" role="listitem">
+              <div className="lab-badge">#7</div>
+              <h4 className="lab-title">Affectiva / Smart Eye</h4>
+              <p className="lab-desc">Test in-car emotional-AI sensing rigs.</p>
+              <div className="lab-footer">
+                <span className="lab-location">KENDALL SQ.</span>
+                <a 
+                  href="https://smarteye.ai" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Open Smart Eye website"
+                  className="lab-link"
+                >
+                  ↗
+                </a>
+              </div>
+            </div>
+            
+            {/* Lab Card 8 */}
+            <div className="lab-card" role="listitem">
+              <div className="lab-badge">#8</div>
+              <h4 className="lab-title">Babson AI Generator Lab</h4>
+              <p className="lab-desc">Zero-to-Idea sprint with students.</p>
+              <div className="lab-footer">
+                <span className="lab-location">WELLESLEY</span>
+                <a 
+                  href="https://www.babson.edu" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Open Babson website"
+                  className="lab-link"
+                >
+                  ↗
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="registration-note">
+            <em>Select your top 3 tours during registration — boxed lunch & charter transport included.</em>
+          </div>
+        </div>
+      </section>
+      
       {/* Other page sections will go here */}
       <div className="content-placeholder">
         <p>Scroll down to see more content...</p>
