@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import './index.css';
-import { MapPin, Globe } from 'lucide-react';
+import { MapPin, Globe, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import * as Tabs from '@radix-ui/react-tabs';
 
 function App() {
   useEffect(() => {
@@ -402,6 +403,67 @@ function App() {
           
           <div className="registration-note">
             <em>Select your top 3 tours during registration — boxed lunch & charter transport included.</em>
+          </div>
+        </div>
+      </section>
+
+      <section id="venues" className="venues-section">
+        <div className="container">
+          <h2 className="venues-title">🏨 Hotel & Space Short-List</h2>
+          <p className="venues-intro">
+            All venues are within a 15-minute walk of MIT labs or provide iconic Boston views. 
+            Meeting spend estimates include two-day F&B, basic AV, hospitality-suite bar, bus transport, 
+            and 30% service/tax; guest rooms are attendee-paid.
+          </p>
+
+          {/* Desktop Tabs */}
+          <div className="venues-tabs">
+            <Tabs.Root className="tabs-root" defaultValue="marriott">
+              <Tabs.List className="tab-list" role="tablist">
+                <Tabs.Trigger className="tab-trigger" value="marriott">Marriott Cambridge</Tabs.Trigger>
+                <Tabs.Trigger className="tab-trigger" value="charles">Charles Hotel</Tabs.Trigger>
+                <Tabs.Trigger className="tab-trigger" value="hyatt">Hyatt Regency</Tabs.Trigger>
+                <Tabs.Trigger className="tab-trigger" value="courtyard">Courtyard</Tabs.Trigger>
+                <Tabs.Trigger className="tab-trigger" value="nerd">Microsoft NERD</Tabs.Trigger>
+                <Tabs.Trigger className="tab-trigger" value="science">Museum of Science</Tabs.Trigger>
+              </Tabs.List>
+
+              <Tabs.Content className="tab-content" value="marriott">
+                <div className="venue-header">
+                  <h3 className="venue-title">
+                    Boston Marriott Cambridge
+                    <a href="https://www.marriott.com/boscb" target="_blank" rel="noopener noreferrer" aria-label="Open Boston Marriott Cambridge website in new tab">
+                      <ExternalLink size={20} />
+                    </a>
+                  </h3>
+                </div>
+                <p className="venue-info">Walk-time to MIT: 2 min</p>
+                <p className="venue-info">12k sq ft / 10 rooms</p>
+                <p className="venue-highlight">Seasonal New England buffets</p>
+                <p className="venue-price">$48K</p>
+                <ul className="venue-pros">
+                  <li>Center of Kendall</li>
+                  <li>Red Line</li>
+                  <li>Waived rental</li>
+                </ul>
+                <a href="https://www.marriott.com/boscb" className="venue-cta" target="_blank" rel="noopener noreferrer">
+                  Visit Website <ExternalLink size={16} />
+                </a>
+              </Tabs.Content>
+
+              {/* Repeat similar content structure for other venues */}
+              {/* Charles Hotel */}
+              <Tabs.Content className="tab-content" value="charles">
+                {/* Content structure similar to Marriott */}
+              </Tabs.Content>
+
+              {/* Continue with other venues... */}
+            </Tabs.Root>
+          </div>
+
+          {/* Mobile Accordion */}
+          <div className="mobile-accordion">
+            {/* Accordion implementation will go here */}
           </div>
         </div>
       </section>
