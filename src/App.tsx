@@ -82,81 +82,43 @@ function App() {
       </section>
 
       <section id="budget" className="budget-section">
+        {/* Previous section content */}
+      </section>
+
+      <section id="activities" className="activities-section">
         <div className="container">
-          <h2 className="budget-title">💰 Registration & Host Budget Frame</h2>
+          <h2 className="activities-title">⭐ Signature Activities & Connections</h2>
+          <div className="activities-title-underline"></div>
           
-          <div className="budget-overview">
-            <p className="budget-info">
-              <strong>Fees:</strong> $1,295 attendee · $150 pre-workshop | 
-              <strong>Head-count:</strong> 60 paid + 10 comp | 
-              <strong>Income:</strong> ≈ $64,750 | 
-              <strong>F&B target:</strong> 60–65% | 
-              <strong>AV & Misc:</strong> 15–20% | 
-              <strong>Room block:</strong> 45 rooms × 3 nights @ $250 | 
-              <strong>Space rental:</strong> typically comped via F&B
-            </p>
-          </div>
+          <div className="activities-grid">
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Microphone icon">🎤</div>
+              <h4 className="activity-title">Positive Turbulence Talks</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">MIT, Harvard & C10 voices share how AI reshapes purpose-driven innovation.</p>
+            </div>
 
-          <div className="budget-table-container">
-            <table className="budget-table">
-              <thead>
-                <tr>
-                  <th>Scenario</th>
-                  <th>Pax</th>
-                  <th>Hotel</th>
-                  <th>Meeting Spend</th>
-                  <th>F&B % Income</th>
-                  <th>Buffer $</th>
-                  <th>Buffer Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lean</td>
-                  <td className="text-right">50</td>
-                  <td>Courtyard</td>
-                  <td className="text-right">$34.3K</td>
-                  <td className="text-right">57%</td>
-                  <td className="text-right">+$30.7K</td>
-                  <td>
-                    <span className="buffer-tag healthy" aria-label="Healthy buffer">
-                      Healthy
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Target</td>
-                  <td className="text-right">60</td>
-                  <td>Marriott</td>
-                  <td className="text-right">$44.3K</td>
-                  <td className="text-right">62%</td>
-                  <td className="text-right">+$20.7K</td>
-                  <td>
-                    <span className="buffer-tag healthy" aria-label="Healthy buffer">
-                      Healthy
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Stretch</td>
-                  <td className="text-right">75</td>
-                  <td>Hyatt</td>
-                  <td className="text-right">$58.8K</td>
-                  <td className="text-right">64%</td>
-                  <td className="text-right">+$6.2K</td>
-                  <td>
-                    <span className="buffer-tag tight" aria-label="Tight buffer">
-                      Tight
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Map icon">🗺</div>
+              <h4 className="activity-title">Whiteboard Studios</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">Teams redesign Work & Need 2030 with design-thinking & AI co-pilot tools.</p>
+            </div>
 
-          <p className="budget-footnote">
-            Meeting spend includes F&B, basic AV, hospitality-suite bar, transport, 30% service/tax. Lodging is attendee-paid.
-          </p>
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Person meditating icon">🧘‍♂️</div>
+              <h4 className="activity-title">Aethos Mindfulness Sessions</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">Breathwork & reflective journaling on "thoughts → destiny."</p>
+            </div>
+
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Video camera icon">🎥</div>
+              <h4 className="activity-title">4K Video Story Lab</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">Spencer & Reece film interviews to fuel AMI's year-round content sprint.</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
