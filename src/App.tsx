@@ -4,6 +4,9 @@ import { MapPin, Globe, ExternalLink, ChevronDown, ChevronUp } from 'lucide-reac
 import * as Tabs from '@radix-ui/react-tabs';
 
 function App() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+  const [activeVenue, setActiveVenue] = useState('marriott');
+
   useEffect(() => {
     // Animate elements on load
     const heroContent = document.querySelector('.hero-content');
@@ -20,8 +23,18 @@ function App() {
       }
     };
 
+    // Handle resize for mobile/desktop switch
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 992);
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (
@@ -48,7 +61,6 @@ function App() {
         </div>
       </section>
       
-      {/* Why Boston / Why Now Section */}
       <section id="why-boston" className="why-boston">
         <div className="container">
           <h2 className="section-title">
@@ -137,7 +149,6 @@ function App() {
         </div>
       </section>
       
-      {/* Theme 2026 Section */}
       <section id="theme" className="theme-section">
         <div className="container">
           <h2 className="theme-title">𝟮𝟬𝟮𝟲 Theme — Becoming Students Again</h2>
@@ -191,7 +202,6 @@ function App() {
         </div>
       </section>
       
-      {/* Program-at-a-Glance Schedule Section */}
       <section id="schedule" className="schedule-section">
         <div className="container">
           <h2 className="schedule-title">🗓 Program-at-a-Glance</h2>
@@ -241,14 +251,12 @@ function App() {
         </div>
       </section>
       
-      {/* Pre-Workshop Super-Lab Menu Section */}
       <section id="labs" className="labs-section">
         <div className="container">
           <h2 className="labs-title">🔬 Pre-Workshop 'Super-Lab' Menu</h2>
           <div className="labs-title-underline"></div>
           
           <div className="labs-grid" role="list">
-            {/* Lab Card 1 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#1</div>
               <h4 className="lab-title">MassRobotics</h4>
@@ -267,7 +275,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 2 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#2</div>
               <h4 className="lab-title">IBM / MIT Watson AI Lab</h4>
@@ -286,7 +293,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 3 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#3</div>
               <h4 className="lab-title">Harvard Wyss Institute</h4>
@@ -305,7 +311,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 4 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#4</div>
               <h4 className="lab-title">Greentown Labs</h4>
@@ -324,7 +329,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 5 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#5</div>
               <h4 className="lab-title">MIT Museum MakerHub</h4>
@@ -343,7 +347,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 6 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#6</div>
               <h4 className="lab-title">Microsoft Garage @ NERD</h4>
@@ -362,7 +365,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 7 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#7</div>
               <h4 className="lab-title">Affectiva / Smart Eye</h4>
@@ -381,7 +383,6 @@ function App() {
               </div>
             </div>
             
-            {/* Lab Card 8 */}
             <div className="lab-card" role="listitem">
               <div className="lab-badge">#8</div>
               <h4 className="lab-title">Babson AI Generator Lab</h4>
@@ -416,8 +417,115 @@ function App() {
             and 30% service/tax; guest rooms are attendee-paid.
           </p>
 
-          {/* Desktop Tabs */}
-          <div className="venues-tabs">
+          {isMobile ? (
+            <div className="mobile-accordion">
+              {[
+                {
+                  id: 'marriott',
+                  name: 'Boston Marriott Cambridge',
+                  distance: 'Walk-time to MIT: 2 min',
+                  space: '12k sq ft / 10 rms',
+                  food: 'Seasonal New England buffets',
+                  price: '$48K',
+                  pros: ['Center of Kendall', 'Red Line', 'Waived rental'],
+                  url: 'https://www.marriott.com/boscb'
+                },
+                {
+                  id: 'charles',
+                  name: 'The Charles Hotel',
+                  distance: '10 min taxi',
+                  space: '18k sq ft / 18 rms',
+                  food: 'Farm-to-table menus',
+                  price: '$59K',
+                  pros: ['Harvard Sq. vibe', 'Jazz bar', 'Spacious suites'],
+                  url: 'https://www.charleshotel.com'
+                },
+                {
+                  id: 'hyatt',
+                  name: 'Hyatt Regency Boston/Cambridge',
+                  distance: '10 min walk via bridge',
+                  space: '25k sq ft ballroom',
+                  food: 'River-view dining',
+                  price: '$65K',
+                  pros: ['Skyline ballroom', 'Largest capacity'],
+                  url: 'https://www.hyatt.com/en-US/hotel/massachusetts/hyatt-regency-boston-cambridge/bosrc'
+                },
+                {
+                  id: 'courtyard',
+                  name: 'Courtyard Marriott Cambridge',
+                  distance: '15 min walk',
+                  space: '6.7k sq ft',
+                  food: 'Lean pricing',
+                  price: '$41K',
+                  pros: ['Biggest budget buffer', 'Marriott points'],
+                  url: 'https://www.marriott.com/boscy'
+                },
+                {
+                  id: 'nerd',
+                  name: 'Microsoft NERD Center',
+                  distance: 'onsite',
+                  space: '180-seat forum + 5 pods',
+                  food: 'Bring-in catering',
+                  price: '$22K',
+                  pros: ['Space free', 'Tech vibe'],
+                  url: 'https://www.microsoftnewengland.com'
+                },
+                {
+                  id: 'science',
+                  name: 'Museum of Science',
+                  distance: '12 min taxi',
+                  space: '270° glass space',
+                  food: 'In-house catering',
+                  price: '$55K',
+                  pros: ['Iconic view', 'Pairs with AI exhibits'],
+                  url: 'https://www.mos.org'
+                }
+              ].map((venue) => (
+                <div 
+                  key={venue.id} 
+                  className="accordion-item"
+                  role="tabpanel"
+                  aria-expanded={activeVenue === venue.id}
+                >
+                  <button
+                    className="accordion-trigger"
+                    onClick={() => setActiveVenue(activeVenue === venue.id ? '' : venue.id)}
+                    aria-controls={`content-${venue.id}`}
+                    aria-expanded={activeVenue === venue.id}
+                  >
+                    {venue.name}
+                    {activeVenue === venue.id ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                  </button>
+                  
+                  {activeVenue === venue.id && (
+                    <div 
+                      id={`content-${venue.id}`}
+                      className="accordion-content"
+                    >
+                      <p className="venue-info">{venue.distance}</p>
+                      <p className="venue-info">{venue.space}</p>
+                      <p className="venue-highlight">{venue.food}</p>
+                      <p className="venue-price">{venue.price}</p>
+                      <ul className="venue-pros">
+                        {venue.pros.map((pro, index) => (
+                          <li key={index}>{pro}</li>
+                        ))}
+                      </ul>
+                      <a 
+                        href={venue.url}
+                        className="venue-cta"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open ${venue.name} website in new tab`}
+                      >
+                        Visit Website <ExternalLink size={16} />
+                      </a>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
             <Tabs.Root className="tabs-root" defaultValue="marriott">
               <Tabs.List className="tab-list" role="tablist">
                 <Tabs.Trigger className="tab-trigger" value="marriott">Marriott Cambridge</Tabs.Trigger>
@@ -428,17 +536,22 @@ function App() {
                 <Tabs.Trigger className="tab-trigger" value="science">Museum of Science</Tabs.Trigger>
               </Tabs.List>
 
-              <Tabs.Content className="tab-content" value="marriott">
+              <Tabs.Content className="tab-content" value="marriott" role="tabpanel">
                 <div className="venue-header">
                   <h3 className="venue-title">
                     Boston Marriott Cambridge
-                    <a href="https://www.marriott.com/boscb" target="_blank" rel="noopener noreferrer" aria-label="Open Boston Marriott Cambridge website in new tab">
+                    <a 
+                      href="https://www.marriott.com/boscb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open Boston Marriott Cambridge website in new tab"
+                    >
                       <ExternalLink size={20} />
                     </a>
                   </h3>
                 </div>
                 <p className="venue-info">Walk-time to MIT: 2 min</p>
-                <p className="venue-info">12k sq ft / 10 rooms</p>
+                <p className="venue-info">12k sq ft / 10 rms</p>
                 <p className="venue-highlight">Seasonal New England buffets</p>
                 <p className="venue-price">$48K</p>
                 <ul className="venue-pros">
@@ -446,32 +559,186 @@ function App() {
                   <li>Red Line</li>
                   <li>Waived rental</li>
                 </ul>
-                <a href="https://www.marriott.com/boscb" className="venue-cta" target="_blank" rel="noopener noreferrer">
+                <a 
+                  href="https://www.marriott.com/boscb"
+                  className="venue-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Boston Marriott Cambridge website in new tab"
+                >
                   Visit Website <ExternalLink size={16} />
                 </a>
               </Tabs.Content>
 
-              {/* Repeat similar content structure for other venues */}
-              {/* Charles Hotel */}
-              <Tabs.Content className="tab-content" value="charles">
-                {/* Content structure similar to Marriott */}
+              <Tabs.Content className="tab-content" value="charles" role="tabpanel">
+                <div className="venue-header">
+                  <h3 className="venue-title">
+                    The Charles Hotel
+                    <a 
+                      href="https://www.charleshotel.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open The Charles Hotel website in new tab"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  </h3>
+                </div>
+                <p className="venue-info">10 min taxi</p>
+                <p className="venue-info">18k sq ft / 18 rms</p>
+                <p className="venue-highlight">Farm-to-table menus</p>
+                <p className="venue-price">$59K</p>
+                <ul className="venue-pros">
+                  <li>Harvard Sq. vibe</li>
+                  <li>Jazz bar</li>
+                  <li>Spacious suites</li>
+                </ul>
+                <a 
+                  href="https://www.charleshotel.com"
+                  className="venue-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open The Charles Hotel website in new tab"
+                >
+                  Visit Website <ExternalLink size={16} />
+                </a>
               </Tabs.Content>
 
-              {/* Continue with other venues... */}
-            </Tabs.Root>
-          </div>
+              <Tabs.Content className="tab-content" value="hyatt" role="tabpanel">
+                <div className="venue-header">
+                  <h3 className="venue-title">
+                    Hyatt Regency Boston/Cambridge
+                    <a 
+                      href="https://www.hyatt.com/en-US/hotel/massachusetts/hyatt-regency-boston-cambridge/bosrc"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open Hyatt Regency Boston/Cambridge website in new tab"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  </h3>
+                </div>
+                <p className="venue-info">10 min walk via bridge</p>
+                <p className="venue-info">25k sq ft ballroom</p>
+                <p className="venue-highlight">River-view dining</p>
+                <p className="venue-price">$65K</p>
+                <ul className="venue-pros">
+                  <li>Skyline ballroom</li>
+                  <li>Largest capacity</li>
+                </ul>
+                <a 
+                  href="https://www.hyatt.com/en-US/hotel/massachusetts/hyatt-regency-boston-cambridge/bosrc"
+                  className="venue-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Hyatt Regency Boston/Cambridge website in new tab"
+                >
+                  Visit Website <ExternalLink size={16} />
+                </a>
+              </Tabs.Content>
 
-          {/* Mobile Accordion */}
-          <div className="mobile-accordion">
-            {/* Accordion implementation will go here */}
-          </div>
+              <Tabs.Content className="tab-content" value="courtyard" role="tabpanel">
+                <div className="venue-header">
+                  <h3 className="venue-title">
+                    Courtyard Marriott Cambridge
+                    <a 
+                      href="https://www.marriott.com/boscy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open Courtyard Marriott Cambridge website in new tab"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  </h3>
+                </div>
+                <p className="venue-info">15 min walk</p>
+                <p className="venue-info">6.7k sq ft</p>
+                <p className="venue-highlight">Lean pricing</p>
+                <p className="venue-price">$41K</p>
+                <ul className="venue-pros">
+                  <li>Biggest budget buffer</li>
+                  <li>Marriott points</li>
+                </ul>
+                <a 
+                  href="https://www.marriott.com/boscy"
+                  className="venue-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Courtyard Marriott Cambridge website in new tab"
+                >
+                  Visit Website <ExternalLink size={16} />
+                </a>
+              </Tabs.Content>
+
+              <Tabs.Content className="tab-content" value="nerd" role="tabpanel">
+                <div className="venue-header">
+                  <h3 className="venue-title">
+                    Microsoft NERD Center
+                    <a 
+                      href="https://www.microsoftnewengland.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open Microsoft NERD Center website in new tab"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  </h3>
+                </div>
+                <p className="venue-info">onsite</p>
+                <p className="venue-info">180-seat forum + 5 pods</p>
+                <p className="venue-highlight">Bring-in catering</p>
+                <p className="venue-price">$22K</p>
+                <ul className="venue-pros">
+                  <li>Space free</li>
+                  <li>Tech vibe</li>
+                </ul>
+                <a 
+                  href="https://www.microsoftnewengland.com"
+                  className="venue-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Microsoft NERD Center website in new tab"
+                >
+                  Visit Website <ExternalLink size={16} />
+                </a>
+              </Tabs.Content>
+
+              <Tabs.Content className="tab-content" value="science" role="tabpanel">
+                <div className="venue-header">
+                  <h3 className="venue-title">
+                    Museum of Science - Skyline Room
+                    <a 
+                      href="https://www.mos.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open Museum of Science website in new tab"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  </h3>
+                </div>
+                <p className="venue-info">12 min taxi</p>
+                <p className="venue-info">270° glass space</p>
+                <p className="venue-highlight">In-house catering</p>
+                <p className="venue-price">$55K</p>
+                <ul className="venue-pros">
+                  <li>Iconic view</li>
+                  <li>Pairs with AI exhibits</li>
+                </ul>
+                <a 
+                  href="https://www.mos.org"
+                  className="venue-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Museum of Science website in new tab"
+                >
+                  Visit Website <ExternalLink size={16} />
+                </a>
+              </Tabs.Content>
+            </Tabs.Root>
+          )}
         </div>
       </section>
-      
-      {/* Other page sections will go here */}
-      <div className="content-placeholder">
-        <p>Scroll down to see more content...</p>
-      </div>
     </div>
   );
 }
