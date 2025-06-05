@@ -89,6 +89,15 @@ body {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.hero-quote {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 1.5rem auto;
+  max-width: 800px;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .meta-line {
   font-size: 1.4rem;
   font-weight: 500;
@@ -345,7 +354,7 @@ body {
 }
 
 .premise-quote {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   background-color: #12506b;
   padding: 32px;
@@ -355,8 +364,7 @@ body {
 
 .quote-text {
   font-size: 28px;
-  font-style: italic;
-  line-height: 1.3;
+  line-height: 1.4;
   margin-bottom: 16px;
 }
 
@@ -800,6 +808,11 @@ body {
     font-size: 1.4rem;
   }
   
+  .hero-quote {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+  
   .meta-line {
     font-size: 1.2rem;
   }
@@ -825,7 +838,7 @@ body {
   }
   
   .quote-text {
-    font-size: 24px;
+    font-size: 22px;
   }
   
   .pillar-card {

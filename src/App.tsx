@@ -45,7 +45,7 @@ function App() {
         
         <div className="hero-content">
           <h1 className="hero-title">Becoming Students Again</h1>
-          <h3 className="hero-subtitle">Innovation-in-Practice at the Heart of Kendall Square</h3>
+          <p className="hero-quote">In a world accelerated by Machine learning algorithms, how can we use human learning to choose - together, the future we co-create?</p>
           
           <div className="meta-line">April 22 – 24 • Cambridge, Massachusetts</div>
           
@@ -155,11 +155,7 @@ function App() {
           <div className="theme-title-underline"></div>
           
           <div className="premise-quote">
-            <p className="quote-text">
-              "Artificial Intelligence ≡ <strong>Derivative Human Intelligence</strong>.
-              <br />Thoughts → Words → Actions → Habits → Destiny."
-            </p>
-            <p className="quote-subtitle">In an accelerated world, we choose—together—the future we co-create.</p>
+            <p className="quote-text">In a world accelerated by Machine learning algorithms, how can we use human learning to choose - together, the future we co-create?</p>
           </div>
           
           <div className="pillars-row">
