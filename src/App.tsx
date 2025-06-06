@@ -319,8 +319,6 @@ function App() {
         </div>
       </section>
       
-      <div className="section-divider blue-to-white"></div>
-      
       <section className="speaker-highlights">
         <div className="container">
           <h2 className="speakers-title">Featured Speakers</h2>
@@ -361,7 +359,7 @@ function App() {
         </div>
       </section>
       
-      <div className="section-divider white-to-blue"></div>
+      <div className="section-divider white-to-lightblue"></div>
       
       <section id="schedule" className="schedule-section">
         <div className="container">
@@ -412,7 +410,7 @@ function App() {
         </div>
       </section>
       
-      <div className="section-divider blue-to-white"></div>
+      <div className="section-divider lightblue-to-white"></div>
       
       <section id="labs" className="labs-section">
         <div className="container">
@@ -610,7 +608,7 @@ function App() {
         </div>
       </section>
 
-      <div className="section-divider blue-to-white"></div>
+      <div className="section-divider darkblue-to-lightgray"></div>
 
       <section id="venues" className="venues-section">
         <div className="container">
@@ -1101,8 +1099,6 @@ function App() {
         </div>
       </section>
 
-      <div className="section-divider white-to-blue"></div>
-      
       <div className="section-divider blue-to-white-smooth"></div>
       
       <section id="cta" className="cta-section">

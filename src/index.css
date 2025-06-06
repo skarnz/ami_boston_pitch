@@ -993,14 +993,19 @@ body {
   background: linear-gradient(to bottom, #0c3d54 0%, rgba(12, 61, 84, 0.8) 30%, rgba(12, 61, 84, 0.4) 60%, rgba(12, 61, 84, 0.1) 80%, transparent 100%);
 }
 
-.white-to-blue {
+.white-to-lightblue {
   height: 60px;
-  background: linear-gradient(to bottom, transparent 0%, rgba(12, 61, 84, 0.1) 20%, rgba(12, 61, 84, 0.4) 60%, rgba(12, 61, 84, 0.8) 80%, #0c3d54 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, rgba(247, 249, 251, 0.8) 30%, rgba(247, 249, 251, 0.6) 60%, #f7f9fb 100%);
 }
 
-.blue-to-white {
+.lightblue-to-white {
   height: 60px;
-  background: linear-gradient(to bottom, #0c3d54 0%, rgba(12, 61, 84, 0.8) 20%, rgba(12, 61, 84, 0.4) 40%, rgba(12, 61, 84, 0.1) 80%, transparent 100%);
+  background: linear-gradient(to bottom, #f7f9fb 0%, rgba(247, 249, 251, 0.6) 40%, rgba(255, 255, 255, 0.8) 70%, #ffffff 100%);
+}
+
+.darkblue-to-lightgray {
+  height: 60px;
+  background: linear-gradient(to bottom, #0c3d54 0%, rgba(12, 61, 84, 0.7) 25%, rgba(250, 251, 252, 0.3) 70%, #fafbfc 100%);
 }
 
 /* Temporary content placeholder */
