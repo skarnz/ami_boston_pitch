@@ -319,6 +319,8 @@ function App() {
         </div>
       </section>
       
+      <div className="section-divider blue-to-white"></div>
+      
       <section className="speaker-highlights">
         <div className="container">
           <h2 className="speakers-title">Featured Speakers</h2>
@@ -358,6 +360,8 @@ function App() {
           </div>
         </div>
       </section>
+      
+      <div className="section-divider white-to-blue"></div>
       
       <section id="schedule" className="schedule-section">
         <div className="container">
@@ -407,6 +411,8 @@ function App() {
           <div className="decorative-divider"></div>
         </div>
       </section>
+      
+      <div className="section-divider blue-to-white"></div>
       
       <section id="labs" className="labs-section">
         <div className="container">
@@ -564,6 +570,47 @@ function App() {
           </div>
         </div>
       </section>
+
+      <section id="activities" className="activities-section">
+        <div className="container">
+          <h2 className="section-title">
+            ⭐ Signature Activities & Connections
+          </h2>
+          <div className="title-underline"></div>
+          
+          <div className="activities-grid">
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Microphone icon">🎤</div>
+              <h4 className="activity-title">Positive Turbulence Talks</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">MIT, Harvard & C10 voices share how AI reshapes purpose-driven innovation.</p>
+            </div>
+            
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Map icon">🗺</div>
+              <h4 className="activity-title">Whiteboard Studios</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">Teams redesign <em>Work & Need 2030</em> with design-thinking & AI co-pilot tools.</p>
+            </div>
+            
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Meditation icon">🧘‍♂️</div>
+              <h4 className="activity-title">Aethos Mindfulness Sessions</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">Breathwork & reflective journaling on "thoughts → destiny."</p>
+            </div>
+            
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Video camera icon">🎥</div>
+              <h4 className="activity-title">4K Video Story Lab</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">Spencer & Reece film interviews to fuel AMI's year-round content sprint.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider blue-to-white"></div>
 
       <section id="venues" className="venues-section">
         <div className="container">
@@ -991,16 +1038,7 @@ function App() {
         </div>
       </section>
 
-      <section className="benefits-chips">
-        <div className="container">
-          <div className="chips-container">
-            <div className="benefit-chip">Access</div>
-            <div className="benefit-chip">Confidence</div>
-          </div>
-        </div>
-      </section>
-
-      <div className="section-divider blue-to-white"></div>
+      <div className="section-divider white-to-blue"></div>
       
       <section id="budget" className="budget-section">
         <div className="container">
@@ -1063,45 +1101,8 @@ function App() {
         </div>
       </section>
 
-      <section id="activities" className="activities-section">
-        <div className="container">
-          <h2 className="section-title">
-            ⭐ Signature Activities & Connections
-          </h2>
-          <div className="title-underline"></div>
-          
-          <div className="activities-grid">
-            <div className="activity-card">
-              <div className="activity-icon" aria-label="Microphone icon">🎤</div>
-              <h4 className="activity-title">Positive Turbulence Talks</h4>
-              <div className="activity-divider"></div>
-              <p className="activity-description">MIT, Harvard & C10 voices share how AI reshapes purpose-driven innovation.</p>
-            </div>
-            
-            <div className="activity-card">
-              <div className="activity-icon" aria-label="Map icon">🗺</div>
-              <h4 className="activity-title">Whiteboard Studios</h4>
-              <div className="activity-divider"></div>
-              <p className="activity-description">Teams redesign <em>Work & Need 2030</em> with design-thinking & AI co-pilot tools.</p>
-            </div>
-            
-            <div className="activity-card">
-              <div className="activity-icon" aria-label="Meditation icon">🧘‍♂️</div>
-              <h4 className="activity-title">Aethos Mindfulness Sessions</h4>
-              <div className="activity-divider"></div>
-              <p className="activity-description">Breathwork & reflective journaling on "thoughts → destiny."</p>
-            </div>
-            
-            <div className="activity-card">
-              <div className="activity-icon" aria-label="Video camera icon">🎥</div>
-              <h4 className="activity-title">4K Video Story Lab</h4>
-              <div className="activity-divider"></div>
-              <p className="activity-description">Spencer & Reece film interviews to fuel AMI's year-round content sprint.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <div className="section-divider white-to-blue"></div>
+      
       <div className="section-divider blue-to-white-smooth"></div>
       
       <section id="cta" className="cta-section">

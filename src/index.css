@@ -993,6 +993,16 @@ body {
   background: linear-gradient(to bottom, #0c3d54 0%, rgba(12, 61, 84, 0.8) 30%, rgba(12, 61, 84, 0.4) 60%, rgba(12, 61, 84, 0.1) 80%, transparent 100%);
 }
 
+.white-to-blue {
+  height: 60px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(12, 61, 84, 0.1) 20%, rgba(12, 61, 84, 0.4) 60%, rgba(12, 61, 84, 0.8) 80%, #0c3d54 100%);
+}
+
+.blue-to-white {
+  height: 60px;
+  background: linear-gradient(to bottom, #0c3d54 0%, rgba(12, 61, 84, 0.8) 20%, rgba(12, 61, 84, 0.4) 40%, rgba(12, 61, 84, 0.1) 80%, transparent 100%);
+}
+
 /* Temporary content placeholder */
 .content-placeholder {
   height: 800px;
