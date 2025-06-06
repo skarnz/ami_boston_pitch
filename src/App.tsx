@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './index.css';
 import { MapPin, Globe, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import * as Tabs from '@radix-ui/react-tabs';
@@ -39,6 +39,14 @@ function App() {
 
   return (
     <div className="app">
+      <header className="site-header">
+        <div className="container">
+          <div className="header-content">
+            <img src="/implementation_prompts/AMI logo.png" alt="AMI: An Innovation Learning Community" className="header-logo" />
+          </div>
+        </div>
+      </header>
+      
       <section className="hero">
         <div className="hero-background"></div>
         <div className="hero-overlay"></div>
@@ -60,6 +68,8 @@ function App() {
           <a href="#register" className="cta-button">Register</a>
         </div>
       </section>
+      
+      <div className="section-divider orange-to-white"></div>
       
       <section id="why-boston" className="why-boston">
         <div className="container">
@@ -130,11 +140,32 @@ function App() {
             </div>
             
             <div className="right-column">
-              <div className="map-container">
-                <div className="map-image" id="kendall-map"></div>
+              <div className="enhanced-map-container">
+                <div className="map-wrapper" id="kendall-map-wrapper">
+                  <img 
+                    src="/implementation_prompts/kendallsqstaticmap2.png" 
+                    alt="Kendall Square Map" 
+                    className="enhanced-map-image" 
+                    id="kendall-map"
+                    onClick={() => {
+                      const img = document.getElementById('kendall-map') as HTMLImageElement;
+                      const wrapper = document.getElementById('kendall-map-wrapper') as HTMLElement;
+                      if (img && wrapper) {
+                        const isZoomed = img.classList.contains('zoomed');
+                        if (isZoomed) {
+                          img.classList.remove('zoomed');
+                          wrapper.classList.remove('zoomed');
+                        } else {
+                          img.classList.add('zoomed');
+                          wrapper.classList.add('zoomed');
+                        }
+                      }
+                    }}
+                  />
+                </div>
                 <div className="map-caption">
                   <MapPin size={14} className="map-pin-icon" />
-                  All labs ≤15 min walk from our hotel.
+                  All labs ≤15 min walk from our hotel. <em>(Click to zoom)</em>
                 </div>
               </div>
             </div>
@@ -144,7 +175,7 @@ function App() {
             <blockquote>
               "I honestly feel like we've been dancing around the AI question—now it's time to jump in with both feet."
             </blockquote>
-            <div className="quote-attribution">— <strong>Reece, Babson Fellow</strong></div>
+            <div className="quote-attribution">— <strong>Michael Robinson, AMI Fellow</strong></div>
           </div>
         </div>
       </section>
@@ -184,16 +215,138 @@ function App() {
             </div>
           </div>
           
-          <div className="guiding-questions">
-            <h4 className="questions-title">Guiding Questions</h4>
-            <ol className="questions-list">
-              <li>Work Re-Imagined – uniquely human work after AI.</li>
-              <li>Redefining Need – tech reshapes basics, who decides?</li>
-              <li>Ethics at Velocity – governance for human flourishing.</li>
-              <li>Learning to Learn – adaptive rituals every 90 days.</li>
-              <li>Creative Collisions – cross-discipline sparks.</li>
-              <li>Inner Technologies – resilience & mindfulness practices.</li>
-            </ol>
+          <div className="inter-generational-loom">
+            <h4 className="loom-title">Inter-Generational Loom</h4>
+            <p className="loom-description">
+              <strong>Students ↔ Seasoned Innovators</strong> — The most powerful learning happens when fresh perspectives meet deep experience. 
+              Our <em>Peer-Mentor Rings</em> breakout sessions pair newcomers with veterans in rotating micro-conversations that spark breakthrough insights.
+            </p>
+          </div>
+          
+      <div className="section-divider blue-to-white-smooth"></div>
+      
+      <div className="guiding-questions">
+        <div className="questions-container">
+          <h3 className="questions-title">Guiding Questions for Boston 2026</h3>
+          <div className="questions-title-underline"></div>
+          <ol className="questions-list">
+            <li>How do we capture uniquely human context and experience in the age of AI? How do we define creativity and uniqueness?</li>
+            <li>Energy abundance & redefined need – If limitless energy & digital labor are at hand, who decides what still counts as 'need' & 'work'?</li>
+            <li>Ethics at velocity – Governance for human flourishing.</li>
+            <li>90-day re-learning sprints – Learning how to learn all over again, and how to do it often.</li>
+            <li>How do we adapt our resilience and mindfulness practices when 83% of public LLM use is for companionship, self-help, and therapy? What are the ethical questions? Biases?</li>
+          </ol>
+        </div>
+      </div>
+        </div>
+      </section>
+      
+      <div className="section-divider white-to-blue"></div>
+      
+      <section className="virtual-onramp">
+        <div className="container">
+          <h2 className="section-title">
+            <Globe className="title-icon" size={24} />
+            🎯 Virtual On-Ramp
+          </h2>
+          <div className="title-underline"></div>
+          
+          <div className="onramp-venue-style">
+            <div className="venue-header">
+              <h3 className="venue-title">
+                "4 Augmented Leadership Skills for 2026"
+                <a 
+                  href="https://www.aminnovation.org/meetings/amivirtualgathering/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Register for virtual session"
+                >
+                  <ExternalLink size={20} />
+                </a>
+              </h3>
+            </div>
+            <p className="venue-info">Date: 12 Jun 2025</p>
+            <p className="venue-info webinar-format">Interactive Webinar</p>
+            <img src="/implementation_prompts/bob.png" alt="Bob Johansson" className="speaker-photo" />
+            <p className="venue-highlight">Bob Johansson — Institute for the Future (IFTF)</p>
+            <p className="venue-price">Free Preview Session</p>
+            <ul className="venue-pros">
+              <li>Exclusive AMI Boston 2026 preview</li>
+              <li>Interactive Q&A with Bob Johansson</li>
+              <li>Replay available March 2026</li>
+              <li>Perfect preparation for the main event</li>
+            </ul>
+            <a 
+              href="https://www.aminnovation.org/meetings/amivirtualgathering/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="venue-cta"
+              aria-label="Register for Virtual On-Ramp session"
+            >
+              Register for Virtual Session <ExternalLink size={16} />
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <section className="activities-section">
+        <div className="container">
+          <h2 className="activities-title">What to Expect</h2>
+          <p className="activities-intro">
+            AMI gatherings blend immersive experiences with collaborative learning, offering a variety of activities to spark innovation and build community.
+          </p>
+          
+          <ul className="activities-list">
+            <li>
+              <strong>Optional Pre-Meeting Workshop</strong> – An afternoon deep-dive workshop before the main event (for those who arrive early), focusing on local innovation and hands-on learning experiences.
+            </li>
+            <li>
+              <strong>Networking Receptions & Hospitality</strong> – Welcome Reception on Wednesday evening to introduce attendees, plus after-hours Hospitality Suite gatherings each night for informal networking and spontaneous ideation.
+            </li>
+            <li>
+              <strong>Positive Turbulence Speaker Sessions</strong> – Interactive sessions featuring keynote innovators, where local and visiting thought leaders share insights with Q&A and group discussion.
+            </li>
+            <li>
+              <strong>Site Visits & Off-site Learning</strong> – Hands-on visits to Boston's innovation labs and research centers, providing direct access to cutting-edge work in AI, robotics, and biotech.
+            </li>
+            <li>
+              <strong>Small-Group Dinners & Newcomer Fishbowl</strong> – Organized small-group dinners to connect with peers, and a 'Newcomer Fishbowl' session to welcome first-time attendees and share reflections.
+            </li>
+            <li>
+              <strong>Peer-Mentor Rings</strong> – Our signature Inter-Generational Loom breakout sessions pairing newcomers with veterans in rotating micro-conversations.
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <section className="speaker-highlights">
+        <div className="container">
+          <h2 className="speakers-title">Featured Speakers</h2>
+          
+          <div className="speakers-grid">
+            <div className="speaker-card">
+              <div className="speaker-image-placeholder">
+                <div className="placeholder-icon">👤</div>
+              </div>
+              <p className="speaker-title">Institute for the Future (IFTF)</p>
+              <p className="speaker-topic"><em>"4 Augmented Leadership Skills for 2026"</em></p>
+            </div>
+            
+            <div className="speaker-card">
+              <div className="speaker-image-placeholder">
+                <div className="placeholder-icon">👤</div>
+              </div>
+              <p className="speaker-title">Energy Systems Expert</p>
+              <p className="speaker-topic"><em>Energy Abundance & Redefined Need</em></p>
+            </div>
+            
+            <div className="speaker-card">
+              <div className="speaker-image-placeholder">
+                <div className="placeholder-icon">👤</div>
+              </div>
+              <p className="speaker-title">Criminal Justice & AI Ethics</p>
+              <p className="speaker-topic"><em>Algorithmic Justice & Bias Prevention</em></p>
+            </div>
           </div>
         </div>
       </section>
@@ -225,7 +378,7 @@ function App() {
                   <td className="day-cell"><strong>Thu 23 Apr</strong></td>
                   <td>Luxury Breakfast</td>
                   <td>PT Keynote ① + Whiteboard Studios</td>
-                  <td>Chef Lunch + BBWI + Mindfulness</td>
+                  <td>Chef Lunch + BBWI + Algorithmic Justice Sandbox + Mindfulness</td>
                   <td>Dine-Around + Suite & Video Booth</td>
                 </tr>
                 <tr>
@@ -386,10 +539,10 @@ function App() {
               <div className="lab-footer">
                 <span className="lab-location">WELLESLEY</span>
                 <a 
-                  href="https://www.babson.edu" 
+                  href="https://www.babson.edu/thegenerator/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  aria-label="Open Babson website"
+                  aria-label="Open Babson Generator website"
                   className="lab-link"
                 >
                   ↗
@@ -423,6 +576,9 @@ function App() {
                   space: '12k sq ft / 10 rms',
                   food: 'Seasonal New England buffets',
                   price: '$48K',
+                  roomRate: '$239-$289',
+                  negotiation: 'Negotiations start Jul 2025',
+                  roomBlock: '45 rooms × 3 nights',
                   pros: ['Center of Kendall', 'Red Line', 'Waived rental'],
                   url: 'https://www.marriott.com/boscb'
                 },
@@ -433,6 +589,9 @@ function App() {
                   space: '18k sq ft / 18 rms',
                   food: 'Farm-to-table menus',
                   price: '$59K',
+                  roomRate: '$239-$289',
+                  negotiation: 'Negotiations start Jul 2025',
+                  roomBlock: '45 rooms × 3 nights',
                   pros: ['Harvard Sq. vibe', 'Jazz bar', 'Spacious suites'],
                   url: 'https://www.charleshotel.com'
                 },
@@ -443,6 +602,9 @@ function App() {
                   space: '25k sq ft ballroom',
                   food: 'River-view dining',
                   price: '$65K',
+                  roomRate: '$239-$289',
+                  negotiation: 'Negotiations start Jul 2025',
+                  roomBlock: '45 rooms × 3 nights',
                   pros: ['Skyline ballroom', 'Largest capacity'],
                   url: 'https://www.hyatt.com/en-US/hotel/massachusetts/hyatt-regency-boston-cambridge/bosrc'
                 },
@@ -453,6 +615,9 @@ function App() {
                   space: '6.7k sq ft',
                   food: 'Lean pricing',
                   price: '$41K',
+                  roomRate: '$239-$289',
+                  negotiation: 'Negotiations start Jul 2025',
+                  roomBlock: '45 rooms × 3 nights',
                   pros: ['Biggest budget buffer', 'Marriott points'],
                   url: 'https://www.marriott.com/boscy'
                 },
@@ -463,6 +628,9 @@ function App() {
                   space: '180-seat forum + 5 pods',
                   food: 'Bring-in catering',
                   price: '$22K',
+                  roomRate: 'Partner hotels',
+                  negotiation: '',
+                  roomBlock: '',
                   pros: ['Space free', 'Tech vibe'],
                   url: 'https://www.microsoftnewengland.com'
                 },
@@ -473,6 +641,9 @@ function App() {
                   space: '270° glass space',
                   food: 'In-house catering',
                   price: '$55K',
+                  roomRate: 'Partner hotels',
+                  negotiation: '',
+                  roomBlock: '',
                   pros: ['Iconic view', 'Pairs with AI exhibits'],
                   url: 'https://www.mos.org'
                 }
@@ -502,6 +673,9 @@ function App() {
                       <p className="venue-info">{venue.space}</p>
                       <p className="venue-highlight">{venue.food}</p>
                       <p className="venue-price">{venue.price}</p>
+                      <p className="venue-room-rate"><strong>Room Rate: {venue.roomRate}</strong></p>
+                      <p className="venue-negotiation"><em>{venue.negotiation}</em></p>
+                      <p className="venue-block">{venue.roomBlock}</p>
                       <ul className="venue-pros">
                         {venue.pros.map((pro, index) => (
                           <li key={index}>{pro}</li>
@@ -550,6 +724,9 @@ function App() {
                 <p className="venue-info">12k sq ft / 10 rms</p>
                 <p className="venue-highlight">Seasonal New England buffets</p>
                 <p className="venue-price">$48K</p>
+                <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
+                <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
+                <p className="venue-block">Room block: 45 rooms × 3 nights</p>
                 <ul className="venue-pros">
                   <li>Center of Kendall</li>
                   <li>Red Line</li>
@@ -584,6 +761,9 @@ function App() {
                 <p className="venue-info">18k sq ft / 18 rms</p>
                 <p className="venue-highlight">Farm-to-table menus</p>
                 <p className="venue-price">$59K</p>
+                <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
+                <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
+                <p className="venue-block">Room block: 45 rooms × 3 nights</p>
                 <ul className="venue-pros">
                   <li>Harvard Sq. vibe</li>
                   <li>Jazz bar</li>
@@ -618,6 +798,9 @@ function App() {
                 <p className="venue-info">25k sq ft ballroom</p>
                 <p className="venue-highlight">River-view dining</p>
                 <p className="venue-price">$65K</p>
+                <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
+                <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
+                <p className="venue-block">Room block: 45 rooms × 3 nights</p>
                 <ul className="venue-pros">
                   <li>Skyline ballroom</li>
                   <li>Largest capacity</li>
@@ -651,6 +834,9 @@ function App() {
                 <p className="venue-info">6.7k sq ft</p>
                 <p className="venue-highlight">Lean pricing</p>
                 <p className="venue-price">$41K</p>
+                <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
+                <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
+                <p className="venue-block">Room block: 45 rooms × 3 nights</p>
                 <ul className="venue-pros">
                   <li>Biggest budget buffer</li>
                   <li>Marriott points</li>
@@ -735,6 +921,153 @@ function App() {
           )}
         </div>
       </section>
+
+      <section className="benefits-chips">
+        <div className="container">
+          <div className="chips-container">
+            <div className="benefit-chip">Access</div>
+            <div className="benefit-chip">Confidence</div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider blue-to-white"></div>
+      
+      <section id="budget" className="budget-section">
+        <div className="container">
+          <h2 className="section-title">💰 Registration & Host Budget Frame</h2>
+          
+          <p className="intro-text">
+            <em>Fees:</em> <strong>$1,295</strong> attendee · <strong>$150</strong> pre-workshop  |  <em>Head-count:</em> <strong>60 paid + 10 comp</strong>  |  <em>Income:</em> <strong>≈ $64,750</strong>  |  <em>F&B target:</em> <strong>60–65%</strong>  |  <em>AV & Misc:</em> <strong>15–20%</strong>  |  <em>Space rental:</em> typically <strong>comped</strong> via F&B.
+          </p>
+          
+          <div className="room-rates-highlight">
+            <h3 className="room-rates-title">🏨 Room Rates</h3>
+            <p className="room-rates-info">45 rooms × 3 nights @ <strong>$239-$289 per night</strong></p>
+            <p className="room-rates-note">All venues negotiated for July 2025 • Attendee-paid lodging</p>
+          </div>
+          
+          <div className="schedule-table-container">
+            <table className="schedule-table">
+              <thead>
+                <tr>
+                  <th scope="col">Scenario</th>
+                  <th scope="col">PAX</th>
+                  <th scope="col">Hotel</th>
+                  <th scope="col">Meeting Spend</th>
+                  <th scope="col">F&B % Income</th>
+                  <th scope="col">AV/Misc Buffer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="day-cell"><strong>Lean</strong></td>
+                  <td>50</td>
+                  <td>Courtyard</td>
+                  <td><strong>$34.3K</strong></td>
+                  <td>57% ✅</td>
+                  <td><span className="buffer-healthy" aria-label="Healthy buffer">$10K+</span></td>
+                </tr>
+                <tr>
+                  <td className="day-cell"><strong>Target</strong></td>
+                  <td>60</td>
+                  <td>Marriott</td>
+                  <td><strong>$44.3K</strong></td>
+                  <td>62% ✅</td>
+                  <td><span className="buffer-healthy" aria-label="Healthy buffer">$9–10K</span></td>
+                </tr>
+                <tr>
+                  <td className="day-cell"><strong>Stretch</strong></td>
+                  <td>75</td>
+                  <td>Hyatt</td>
+                  <td><strong>$58.8K</strong></td>
+                  <td>64% ✅</td>
+                  <td><span className="buffer-tight" aria-label="Tight buffer">~$6K</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <p className="budget-footnote">
+            <em>Meeting spend includes F&B, basic AV, hospitality-suite bar, transport, 30% service/tax.</em>
+          </p>
+        </div>
+      </section>
+
+      <section id="activities" className="activities-section">
+        <div className="container">
+          <h2 className="section-title">
+            ⭐ Signature Activities & Connections
+          </h2>
+          <div className="title-underline"></div>
+          
+          <div className="activities-grid">
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Microphone icon">🎤</div>
+              <h4 className="activity-title">Positive Turbulence Talks</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">MIT, Harvard & C10 voices share how AI reshapes purpose-driven innovation.</p>
+            </div>
+            
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Map icon">🗺</div>
+              <h4 className="activity-title">Whiteboard Studios</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">Teams redesign <em>Work & Need 2030</em> with design-thinking & AI co-pilot tools.</p>
+            </div>
+            
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Meditation icon">🧘‍♂️</div>
+              <h4 className="activity-title">Aethos Mindfulness Sessions</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">Breathwork & reflective journaling on "thoughts → destiny."</p>
+            </div>
+            
+            <div className="activity-card">
+              <div className="activity-icon" aria-label="Video camera icon">🎥</div>
+              <h4 className="activity-title">4K Video Story Lab</h4>
+              <div className="activity-divider"></div>
+              <p className="activity-description">Spencer & Reece film interviews to fuel AMI's year-round content sprint.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider blue-to-white-smooth"></div>
+      
+      <section id="cta" className="cta-section">
+        <div className="container">
+          <h2 className="cta-title">Ready to Co-Design the Future?</h2>
+          <p className="cta-subtitle">
+            Join 75 innovators for three days of action, mindfulness and Positive Turbulence in Cambridge.
+          </p>
+          <a href="#register" className="cta-button" aria-label="Pre-register for AMI Boston 2026">
+            Pre-Register Now →
+          </a>
+        </div>
+      </section>
+
+      <footer id="footer" className="site-footer">
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-left">
+              <img src="/implementation_prompts/AMI logo.png" alt="AMI logo" className="footer-logo" />
+              <div className="footer-org">Association for Managers of Innovation</div>
+              <div className="footer-address">P.O. Box 123 · Greensboro, NC · USA</div>
+              <div className="footer-copyright">© 2025 AMI — All Rights Reserved</div>
+            </div>
+            <div className="footer-right">
+              <div className="footer-links">
+                <a href="#" aria-label="Privacy policy">Privacy</a>
+                <span> · </span>
+                <a href="#" aria-label="Code of conduct">Code of Conduct</a>
+                <span> · </span>
+                <a href="mailto:info@innovationmanagers.org" aria-label="Contact AMI">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
