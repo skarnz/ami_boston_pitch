@@ -1072,6 +1072,37 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+.venue-content-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.venue-details {
+  flex: 1;
+}
+
+.venue-image-container {
+  flex: 0 0 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.venue-image {
+  width: 500px;
+  height: 375px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.venue-image:hover {
+  transform: scale(1.05);
+}
+
 .venue-header {
   display: flex;
   align-items: center;
@@ -1186,6 +1217,22 @@ body {
   
   .accordion-content[data-state="closed"] {
     display: none;
+  }
+  
+  .venue-content-layout {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .venue-image-container {
+    flex: none;
+    align-self: center;
+    padding: 16px;
+  }
+  
+  .venue-image {
+    width: 300px;
+    height: 225px;
   }
 }
 

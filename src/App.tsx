@@ -326,10 +326,10 @@ function App() {
           <div className="speakers-grid">
             <div className="speaker-card">
               <div className="speaker-image-placeholder">
-                <div className="placeholder-icon">👤</div>
+                <div className="placeholder-icon">👥</div>
               </div>
-              <p className="speaker-title">Institute for the Future (IFTF)</p>
-              <p className="speaker-topic"><em>"4 Augmented Leadership Skills for 2026"</em></p>
+              <p className="speaker-title">Babson Work Futures Research</p>
+              <p className="speaker-topic"><em>Professor & Student Researcher Pair</em></p>
             </div>
             
             <div className="speaker-card">
@@ -346,6 +346,14 @@ function App() {
               </div>
               <p className="speaker-title">Criminal Justice & AI Ethics</p>
               <p className="speaker-topic"><em>Algorithmic Justice & Bias Prevention</em></p>
+            </div>
+            
+            <div className="speaker-card">
+              <div className="speaker-image-placeholder">
+                <div className="placeholder-icon">👤</div>
+              </div>
+              <p className="speaker-title">Economy & Ethics Specialist</p>
+              <p className="speaker-topic"><em>MIT Research & Policy Analysis</em></p>
             </div>
           </div>
         </div>
@@ -580,7 +588,8 @@ function App() {
                   negotiation: 'Negotiations start Jul 2025',
                   roomBlock: '45 rooms × 3 nights',
                   pros: ['Center of Kendall', 'Red Line', 'Waived rental'],
-                  url: 'https://www.marriott.com/boscb'
+                  url: 'https://www.marriott.com/boscb',
+                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/boston%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvYm9zdG9uIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc0OTIyODM1NCwiZXhwIjoxNzgwNzY0MzU0fQ.y4CjrSyRVkHKlNdmIiqbyoqWBpxsaNPKqM_oT_eMwkU'
                 },
                 {
                   id: 'charles',
@@ -593,7 +602,8 @@ function App() {
                   negotiation: 'Negotiations start Jul 2025',
                   roomBlock: '45 rooms × 3 nights',
                   pros: ['Harvard Sq. vibe', 'Jazz bar', 'Spacious suites'],
-                  url: 'https://www.charleshotel.com'
+                  url: 'https://www.charleshotel.com',
+                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/charles%20hotel%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY2hhcmxlcyBob3RlbCBjYW1icmlkZ2UucG5nIiwiaWF0IjoxNzQ5MjI4MzA5LCJleHAiOjE3ODA3NjQzMDl9.ioHA2ak__oSUUOt6e6zhFnVHly7v89oQ2TFjbYxvfBM'
                 },
                 {
                   id: 'hyatt',
@@ -606,7 +616,8 @@ function App() {
                   negotiation: 'Negotiations start Jul 2025',
                   roomBlock: '45 rooms × 3 nights',
                   pros: ['Skyline ballroom', 'Largest capacity'],
-                  url: 'https://www.hyatt.com/en-US/hotel/massachusetts/hyatt-regency-boston-cambridge/bosrc'
+                  url: 'https://www.hyatt.com/en-US/hotel/massachusetts/hyatt-regency-boston-cambridge/bosrc',
+                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/hyattregency.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvaHlhdHRyZWdlbmN5LnBuZyIsImlhdCI6MTc0OTIyODg0MCwiZXhwIjoxNzgwNzY0ODQwfQ.PIn0JnPM6KwMpehPr0B53cJ9muOTTYQvRqHgV6xTS8M'
                 },
                 {
                   id: 'courtyard',
@@ -619,7 +630,8 @@ function App() {
                   negotiation: 'Negotiations start Jul 2025',
                   roomBlock: '45 rooms × 3 nights',
                   pros: ['Biggest budget buffer', 'Marriott points'],
-                  url: 'https://www.marriott.com/boscy'
+                  url: 'https://www.marriott.com/boscy',
+                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/courtyard%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY291cnR5YXJkIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc0OTIyOTE3OCwiZXhwIjoxNzgwNzY1MTc4fQ.zSijiHiLNm53newAL0h1FOme-C4yK9sBbDtm26fCUwQ'
                 },
                 {
                   id: 'nerd',
@@ -669,27 +681,40 @@ function App() {
                       id={`content-${venue.id}`}
                       className="accordion-content"
                     >
-                      <p className="venue-info">{venue.distance}</p>
-                      <p className="venue-info">{venue.space}</p>
-                      <p className="venue-highlight">{venue.food}</p>
-                      <p className="venue-price">{venue.price}</p>
-                      <p className="venue-room-rate"><strong>Room Rate: {venue.roomRate}</strong></p>
-                      <p className="venue-negotiation"><em>{venue.negotiation}</em></p>
-                      <p className="venue-block">{venue.roomBlock}</p>
-                      <ul className="venue-pros">
-                        {venue.pros.map((pro, index) => (
-                          <li key={index}>{pro}</li>
-                        ))}
-                      </ul>
-                      <a 
-                        href={venue.url}
-                        className="venue-cta"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Open ${venue.name} website in new tab`}
-                      >
-                        Visit Website <ExternalLink size={16} />
-                      </a>
+                      <div className="venue-content-layout">
+                        <div className="venue-details">
+                          <p className="venue-info">{venue.distance}</p>
+                          <p className="venue-info">{venue.space}</p>
+                          <p className="venue-highlight">{venue.food}</p>
+                          <p className="venue-price">{venue.price}</p>
+                          <p className="venue-room-rate"><strong>Room Rate: {venue.roomRate}</strong></p>
+                          <p className="venue-negotiation"><em>{venue.negotiation}</em></p>
+                          <p className="venue-block">{venue.roomBlock}</p>
+                          <ul className="venue-pros">
+                            {venue.pros.map((pro, index) => (
+                              <li key={index}>{pro}</li>
+                            ))}
+                          </ul>
+                          <a 
+                            href={venue.url}
+                            className="venue-cta"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Open ${venue.name} website in new tab`}
+                          >
+                            Visit Website <ExternalLink size={16} />
+                          </a>
+                        </div>
+                        {venue.image && (
+                          <div className="venue-image-container">
+                            <img 
+                              src={venue.image} 
+                              alt={`${venue.name} exterior`} 
+                              className="venue-image"
+                            />
+                          </div>
+                        )}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -720,27 +745,38 @@ function App() {
                     </a>
                   </h3>
                 </div>
-                <p className="venue-info">Walk-time to MIT: 2 min</p>
-                <p className="venue-info">12k sq ft / 10 rms</p>
-                <p className="venue-highlight">Seasonal New England buffets</p>
-                <p className="venue-price">$48K</p>
-                <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
-                <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
-                <p className="venue-block">Room block: 45 rooms × 3 nights</p>
-                <ul className="venue-pros">
-                  <li>Center of Kendall</li>
-                  <li>Red Line</li>
-                  <li>Waived rental</li>
-                </ul>
-                <a 
-                  href="https://www.marriott.com/boscb"
-                  className="venue-cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Boston Marriott Cambridge website in new tab"
-                >
-                  Visit Website <ExternalLink size={16} />
-                </a>
+                <div className="venue-content-layout">
+                  <div className="venue-details">
+                    <p className="venue-info">Walk-time to MIT: 2 min</p>
+                    <p className="venue-info">12k sq ft / 10 rms</p>
+                    <p className="venue-highlight">Seasonal New England buffets</p>
+                    <p className="venue-price">$48K</p>
+                    <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
+                    <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
+                    <p className="venue-block">Room block: 45 rooms × 3 nights</p>
+                    <ul className="venue-pros">
+                      <li>Center of Kendall</li>
+                      <li>Red Line</li>
+                      <li>Waived rental</li>
+                    </ul>
+                    <a 
+                      href="https://www.marriott.com/boscb"
+                      className="venue-cta"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open Boston Marriott Cambridge website in new tab"
+                    >
+                      Visit Website <ExternalLink size={16} />
+                    </a>
+                  </div>
+                  <div className="venue-image-container">
+                    <img 
+                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/boston%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvYm9zdG9uIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc0OTIyODM1NCwiZXhwIjoxNzgwNzY0MzU0fQ.y4CjrSyRVkHKlNdmIiqbyoqWBpxsaNPKqM_oT_eMwkU" 
+                      alt="Boston Marriott Cambridge exterior" 
+                      className="venue-image"
+                    />
+                  </div>
+                </div>
               </Tabs.Content>
 
               <Tabs.Content className="tab-content" value="charles" role="tabpanel">
@@ -757,27 +793,38 @@ function App() {
                     </a>
                   </h3>
                 </div>
-                <p className="venue-info">10 min taxi</p>
-                <p className="venue-info">18k sq ft / 18 rms</p>
-                <p className="venue-highlight">Farm-to-table menus</p>
-                <p className="venue-price">$59K</p>
-                <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
-                <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
-                <p className="venue-block">Room block: 45 rooms × 3 nights</p>
-                <ul className="venue-pros">
-                  <li>Harvard Sq. vibe</li>
-                  <li>Jazz bar</li>
-                  <li>Spacious suites</li>
-                </ul>
-                <a 
-                  href="https://www.charleshotel.com"
-                  className="venue-cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open The Charles Hotel website in new tab"
-                >
-                  Visit Website <ExternalLink size={16} />
-                </a>
+                <div className="venue-content-layout">
+                  <div className="venue-details">
+                    <p className="venue-info">10 min taxi</p>
+                    <p className="venue-info">18k sq ft / 18 rms</p>
+                    <p className="venue-highlight">Farm-to-table menus</p>
+                    <p className="venue-price">$59K</p>
+                    <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
+                    <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
+                    <p className="venue-block">Room block: 45 rooms × 3 nights</p>
+                    <ul className="venue-pros">
+                      <li>Harvard Sq. vibe</li>
+                      <li>Jazz bar</li>
+                      <li>Spacious suites</li>
+                    </ul>
+                    <a 
+                      href="https://www.charleshotel.com"
+                      className="venue-cta"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open The Charles Hotel website in new tab"
+                    >
+                      Visit Website <ExternalLink size={16} />
+                    </a>
+                  </div>
+                  <div className="venue-image-container">
+                    <img 
+                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/charles%20hotel%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY2hhcmxlcyBob3RlbCBjYW1icmlkZ2UucG5nIiwiaWF0IjoxNzQ5MjI4MzA5LCJleHAiOjE3ODA3NjQzMDl9.ioHA2ak__oSUUOt6e6zhFnVHly7v89oQ2TFjbYxvfBM" 
+                      alt="The Charles Hotel exterior" 
+                      className="venue-image"
+                    />
+                  </div>
+                </div>
               </Tabs.Content>
 
               <Tabs.Content className="tab-content" value="hyatt" role="tabpanel">
@@ -794,26 +841,37 @@ function App() {
                     </a>
                   </h3>
                 </div>
-                <p className="venue-info">10 min walk via bridge</p>
-                <p className="venue-info">25k sq ft ballroom</p>
-                <p className="venue-highlight">River-view dining</p>
-                <p className="venue-price">$65K</p>
-                <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
-                <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
-                <p className="venue-block">Room block: 45 rooms × 3 nights</p>
-                <ul className="venue-pros">
-                  <li>Skyline ballroom</li>
-                  <li>Largest capacity</li>
-                </ul>
-                <a 
-                  href="https://www.hyatt.com/en-US/hotel/massachusetts/hyatt-regency-boston-cambridge/bosrc"
-                  className="venue-cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Hyatt Regency Boston/Cambridge website in new tab"
-                >
-                  Visit Website <ExternalLink size={16} />
-                </a>
+                <div className="venue-content-layout">
+                  <div className="venue-details">
+                    <p className="venue-info">10 min walk via bridge</p>
+                    <p className="venue-info">25k sq ft ballroom</p>
+                    <p className="venue-highlight">River-view dining</p>
+                    <p className="venue-price">$65K</p>
+                    <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
+                    <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
+                    <p className="venue-block">Room block: 45 rooms × 3 nights</p>
+                    <ul className="venue-pros">
+                      <li>Skyline ballroom</li>
+                      <li>Largest capacity</li>
+                    </ul>
+                    <a 
+                      href="https://www.hyatt.com/en-US/hotel/massachusetts/hyatt-regency-boston-cambridge/bosrc"
+                      className="venue-cta"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open Hyatt Regency Boston/Cambridge website in new tab"
+                    >
+                      Visit Website <ExternalLink size={16} />
+                    </a>
+                  </div>
+                  <div className="venue-image-container">
+                    <img 
+                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/hyattregency.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvaHlhdHRyZWdlbmN5LnBuZyIsImlhdCI6MTc0OTIyODg0MCwiZXhwIjoxNzgwNzY0ODQwfQ.PIn0JnPM6KwMpehPr0B53cJ9muOTTYQvRqHgV6xTS8M" 
+                      alt="Hyatt Regency Boston/Cambridge exterior" 
+                      className="venue-image"
+                    />
+                  </div>
+                </div>
               </Tabs.Content>
 
               <Tabs.Content className="tab-content" value="courtyard" role="tabpanel">
@@ -830,26 +888,37 @@ function App() {
                     </a>
                   </h3>
                 </div>
-                <p className="venue-info">15 min walk</p>
-                <p className="venue-info">6.7k sq ft</p>
-                <p className="venue-highlight">Lean pricing</p>
-                <p className="venue-price">$41K</p>
-                <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
-                <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
-                <p className="venue-block">Room block: 45 rooms × 3 nights</p>
-                <ul className="venue-pros">
-                  <li>Biggest budget buffer</li>
-                  <li>Marriott points</li>
-                </ul>
-                <a 
-                  href="https://www.marriott.com/boscy"
-                  className="venue-cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Courtyard Marriott Cambridge website in new tab"
-                >
-                  Visit Website <ExternalLink size={16} />
-                </a>
+                <div className="venue-content-layout">
+                  <div className="venue-details">
+                    <p className="venue-info">15 min walk</p>
+                    <p className="venue-info">6.7k sq ft</p>
+                    <p className="venue-highlight">Lean pricing</p>
+                    <p className="venue-price">$41K</p>
+                    <p className="venue-room-rate"><strong>Room Rate: $239-$289</strong></p>
+                    <p className="venue-negotiation"><em>Negotiations start Jul 2025</em></p>
+                    <p className="venue-block">Room block: 45 rooms × 3 nights</p>
+                    <ul className="venue-pros">
+                      <li>Biggest budget buffer</li>
+                      <li>Marriott points</li>
+                    </ul>
+                    <a 
+                      href="https://www.marriott.com/boscy"
+                      className="venue-cta"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open Courtyard Marriott Cambridge website in new tab"
+                    >
+                      Visit Website <ExternalLink size={16} />
+                    </a>
+                  </div>
+                  <div className="venue-image-container">
+                    <img 
+                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/courtyard%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY291cnR5YXJkIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc0OTIyOTE3OCwiZXhwIjoxNzgwNzY1MTc4fQ.zSijiHiLNm53newAL0h1FOme-C4yK9sBbDtm26fCUwQ" 
+                      alt="Courtyard Marriott Cambridge exterior" 
+                      className="venue-image"
+                    />
+                  </div>
+                </div>
               </Tabs.Content>
 
               <Tabs.Content className="tab-content" value="nerd" role="tabpanel">
