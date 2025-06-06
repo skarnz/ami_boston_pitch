@@ -42,7 +42,7 @@ function App() {
       <header className="site-header">
         <div className="container">
           <div className="header-content">
-            <img src="/implementation_prompts/AMI logo.png" alt="AMI: An Innovation Learning Community" className="header-logo" />
+            <img src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/AMI%20logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvQU1JIGxvZ28ucG5nIiwiaWF0IjoxNzQ5MjI2NzIzLCJleHAiOjE3ODA3NjI3MjN9.sW3rRJFnH6RTPGdNAA29GwnMflACZV8qDcGXEfWjENA" alt="AMI: An Innovation Learning Community" className="header-logo" />
           </div>
         </div>
       </header>
@@ -143,7 +143,7 @@ function App() {
               <div className="enhanced-map-container">
                 <div className="map-wrapper" id="kendall-map-wrapper">
                   <img 
-                    src="/implementation_prompts/kendallsqstaticmap2.png" 
+                    src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/kendallsqstaticmap2.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3Mva2VuZGFsbHNxc3RhdGljbWFwMi5wbmciLCJpYXQiOjE3NDkyMjY4MzgsImV4cCI6MTc4MDc2MjgzOH0.b1azqPig1xIJet_Ks809JBVk-JlWLpxi3AKJ17j9ZDU" 
                     alt="Kendall Square Map" 
                     className="enhanced-map-image" 
                     id="kendall-map"
@@ -267,7 +267,7 @@ function App() {
             </div>
             <p className="venue-info">Date: 12 Jun 2025</p>
             <p className="venue-info webinar-format">Interactive Webinar</p>
-            <img src="/implementation_prompts/bob.png" alt="Bob Johansson" className="speaker-photo" />
+            <img src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/bob.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvYm9iLnBuZyIsImlhdCI6MTc0OTIyNjgyMSwiZXhwIjoxNzgwNzYyODIxfQ.5ZaOTEZorScQ933KOti895VN4CQLquwPTkmwvjgkq-A" alt="Bob Johansson" className="speaker-photo" />
             <p className="venue-highlight">Bob Johansson — Institute for the Future (IFTF)</p>
             <p className="venue-price">Free Preview Session</p>
             <ul className="venue-pros">
@@ -1051,7 +1051,7 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-left">
-              <img src="/implementation_prompts/AMI logo.png" alt="AMI logo" className="footer-logo" />
+              <img src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/AMI%20logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xYmZkYmRkNC1jZTViLTRjZTEtODNiZi1kZWMwNTIyNjNhZTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvQU1JIGxvZ28ucG5nIiwiaWF0IjoxNzQ5MjI2NzIzLCJleHAiOjE3ODA3NjI3MjN9.sW3rRJFnH6RTPGdNAA29GwnMflACZV8qDcGXEfWjENA" alt="AMI logo" className="footer-logo" />
               <div className="footer-org">Association for Managers of Innovation</div>
               <div className="footer-address">P.O. Box 123 · Greensboro, NC · USA</div>
               <div className="footer-copyright">© 2025 AMI — All Rights Reserved</div>
