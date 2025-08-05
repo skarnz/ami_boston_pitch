@@ -42,7 +42,7 @@ function App() {
       <header className="site-header">
         <div className="container">
           <div className="header-content">
-            <img src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/AMI%20logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvQU1JIGxvZ28ucG5nIiwiaWF0IjoxNzUzMzY5NDY1LCJleHAiOjE3ODQ5MDU0NjV9.nt9G_aMrSaRYpyntH_lSEdYDRsRwEtf9XwCq-LstAgE" alt="AMI: An Innovation Learning Community" className="header-logo" />
+            <img src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/AMI%20logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvQU1JIGxvZ28ucG5nIiwiaWF0IjoxNzU0NDAzNzQ3LCJleHAiOjE3ODU5Mzk3NDd9.TcAVk3yxOkzeDcQ4a8aMNsSOHIU5JegD2Bq41In_T6E" alt="AMI: An Innovation Learning Community" className="header-logo" />
           </div>
         </div>
       </header>
@@ -143,7 +143,7 @@ function App() {
               <div className="enhanced-map-container">
                 <div className="map-wrapper" id="kendall-map-wrapper">
                   <img 
-                    src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/kendallsqstaticmap2.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3Mva2VuZGFsbHNxc3RhdGljbWFwMi5wbmciLCJpYXQiOjE3NTMzNjk0OTIsImV4cCI6MTc4NDkwNTQ5Mn0.y1swcqn7pSa6TdN4F1mysJLy1GZ6y9VypW8jz_9pGiA" 
+                    src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/kendallsqstaticmap2.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3Mva2VuZGFsbHNxc3RhdGljbWFwMi5wbmciLCJpYXQiOjE3NTQ0MDM3ODYsImV4cCI6MTc4NTkzOTc4Nn0.roSnvFf3XhMCkGSMZQkJrfpdjxwZIhAg7aCTYdnwzOY" 
                     alt="Kendall Square Map" 
                     className="enhanced-map-image" 
                     id="kendall-map"
@@ -267,7 +267,7 @@ function App() {
             </div>
             <p className="venue-info">Date: 12 Jun 2025</p>
             <p className="venue-info webinar-format">Interactive Webinar</p>
-            <img src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/bob.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvYm9iLnBuZyIsImlhdCI6MTc1MzM2OTQ3NCwiZXhwIjoxNzg0OTA1NDc0fQ.3I-s08GZEcMoDUBeNCMTtgE8r_QBFhPPsaIZhp6KIzQ" alt="Bob Johansson" className="speaker-photo" />
+            <img src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/bob.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvYm9iLnBuZyIsImlhdCI6MTc1NDQwMzc2MSwiZXhwIjoxNzg1OTM5NzYxfQ.ZxSYJxD3XWV9DKg36uK7-JxOiIQE9kvDXFYBU7zILHM" alt="Bob Johansson" className="speaker-photo" />
             <p className="venue-highlight">Bob Johansson — Institute for the Future (IFTF)</p>
             <p className="venue-price">Free Preview Session</p>
             <ul className="venue-pros">
@@ -634,7 +634,7 @@ function App() {
                   roomBlock: '45 rooms × 3 nights',
                   pros: ['Center of Kendall', 'Red Line', 'Waived rental'],
                   url: 'https://www.marriott.com/boscb',
-                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/boston%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvYm9zdG9uIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc1MzM2OTQ3OCwiZXhwIjoxNzg0OTA1NDc4fQ.595MGYryTmbPCn8QQplpUx9I1S6dKQ561Ubd0NEFAsE'
+                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/boston%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvYm9zdG9uIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc1NDQwMzc2NSwiZXhwIjoxNzg1OTM5NzY1fQ.GF2_ie9ZOzblwcwqonOUvkfRrsGCMMgfEzDYW7JSAA4'
                 },
                 {
                   id: 'charles',
@@ -648,7 +648,7 @@ function App() {
                   roomBlock: '45 rooms × 3 nights',
                   pros: ['Harvard Sq. vibe', 'Jazz bar', 'Spacious suites'],
                   url: 'https://www.charleshotel.com',
-                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/charles%20hotel%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY2hhcmxlcyBob3RlbCBjYW1icmlkZ2UucG5nIiwiaWF0IjoxNzUzMzY5NDgxLCJleHAiOjE3ODQ5MDU0ODF9.grzz605842T-ReaQcX4ab-wBodDr5gtSS_ceru4RHMQ'
+                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/charles%20hotel%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY2hhcmxlcyBob3RlbCBjYW1icmlkZ2UucG5nIiwiaWF0IjoxNzU0NDAzNzY5LCJleHAiOjE3ODU5Mzk3Njl9.8AVfoUbn-_SYEm37S4Uk_hoari8XP6Tudud1UkaDIyE'
                 },
                 {
                   id: 'hyatt',
@@ -662,7 +662,7 @@ function App() {
                   roomBlock: '45 rooms × 3 nights',
                   pros: ['Skyline ballroom', 'Largest capacity'],
                   url: 'https://www.hyatt.com/en-US/hotel/massachusetts/hyatt-regency-boston-cambridge/bosrc',
-                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/hyattregency.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvaHlhdHRyZWdlbmN5LnBuZyIsImlhdCI6MTc0OTIyODg0MCwiZXhwIjoxNzgwNzY0ODQwfQ.PIn0JnPM6KwMpehPr0B53cJ9muOTTYQvRqHgV6xTS8M'
+                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/hyattregency.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvaHlhdHRyZWdlbmN5LnBuZyIsImlhdCI6MTc1NDQwMzc4MiwiZXhwIjoxNzg1OTM5NzgyfQ.XCk5fTCBI-JZ0mOYFBtB_j7lult4cDE9xpjZxhAFnfc'
                 },
                 {
                   id: 'courtyard',
@@ -676,7 +676,7 @@ function App() {
                   roomBlock: '45 rooms × 3 nights',
                   pros: ['Biggest budget buffer', 'Marriott points'],
                   url: 'https://www.marriott.com/boscy',
-                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/courtyard%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY291cnR5YXJkIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc1MzM2OTQ4NywiZXhwIjoxNzg0OTA1NDg3fQ.l5bBpC0eqA4qe0tIcmuh8v8Exid2CgxcWfKjwMTo5Xk'
+                  image: 'https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/courtyard%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY291cnR5YXJkIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc1NDQwMzc3NiwiZXhwIjoxNzg1OTM5Nzc2fQ.uWgLcLevEcnT-Xj2AE3RWkOdvdtbjswIE6TcLfue1LE'
                 },
                 {
                   id: 'nerd',
@@ -816,7 +816,7 @@ function App() {
                   </div>
                   <div className="venue-image-container">
                     <img 
-                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/boston%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvYm9zdG9uIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc1MzM2OTQ3OCwiZXhwIjoxNzg0OTA1NDc4fQ.595MGYryTmbPCn8QQplpUx9I1S6dKQ561Ubd0NEFAsE" 
+                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/boston%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvYm9zdG9uIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc1NDQwMzc2NSwiZXhwIjoxNzg1OTM5NzY1fQ.GF2_ie9ZOzblwcwqonOUvkfRrsGCMMgfEzDYW7JSAA4" 
                       alt="Boston Marriott Cambridge exterior" 
                       className="venue-image"
                     />
@@ -864,7 +864,7 @@ function App() {
                   </div>
                   <div className="venue-image-container">
                     <img 
-                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/charles%20hotel%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY2hhcmxlcyBob3RlbCBjYW1icmlkZ2UucG5nIiwiaWF0IjoxNzUzMzY5NDgxLCJleHAiOjE3ODQ5MDU0ODF9.grzz605842T-ReaQcX4ab-wBodDr5gtSS_ceru4RHMQ" 
+                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/charles%20hotel%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY2hhcmxlcyBob3RlbCBjYW1icmlkZ2UucG5nIiwiaWF0IjoxNzU0NDAzNzY5LCJleHAiOjE3ODU5Mzk3Njl9.8AVfoUbn-_SYEm37S4Uk_hoari8XP6Tudud1UkaDIyE" 
                       alt="The Charles Hotel exterior" 
                       className="venue-image"
                     />
@@ -911,7 +911,7 @@ function App() {
                   </div>
                   <div className="venue-image-container">
                     <img 
-                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/hyattregency.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvaHlhdHRyZWdlbmN5LnBuZyIsImlhdCI6MTc0OTIyODg0MCwiZXhwIjoxNzgwNzY0ODQwfQ.PIn0JnPM6KwMpehPr0B53cJ9muOTTYQvRqHgV6xTS8M" 
+                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/hyattregency.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvaHlhdHRyZWdlbmN5LnBuZyIsImlhdCI6MTc1NDQwMzc4MiwiZXhwIjoxNzg1OTM5NzgyfQ.XCk5fTCBI-JZ0mOYFBtB_j7lult4cDE9xpjZxhAFnfc" 
                       alt="Hyatt Regency Boston/Cambridge exterior" 
                       className="venue-image"
                     />
@@ -958,7 +958,7 @@ function App() {
                   </div>
                   <div className="venue-image-container">
                     <img 
-                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/courtyard%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY291cnR5YXJkIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc1MzM2OTQ4NywiZXhwIjoxNzg0OTA1NDg3fQ.l5bBpC0eqA4qe0tIcmuh8v8Exid2CgxcWfKjwMTo5Xk" 
+                      src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/courtyard%20marriot%20cambridge.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvY291cnR5YXJkIG1hcnJpb3QgY2FtYnJpZGdlLnBuZyIsImlhdCI6MTc1NDQwMzc3NiwiZXhwIjoxNzg1OTM5Nzc2fQ.uWgLcLevEcnT-Xj2AE3RWkOdvdtbjswIE6TcLfue1LE" 
                       alt="Courtyard Marriott Cambridge exterior" 
                       className="venue-image"
                     />
@@ -1117,7 +1117,7 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-left">
-              <img src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/AMI%20logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMmY2MDgzNy0xMjEyLTRmNWUtYmViNS00MDUzMTI1OTAxYjgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvQU1JIGxvZ28ucG5nIiwiaWF0IjoxNzUzMzY5NDY1LCJleHAiOjE3ODQ5MDU0NjV9.nt9G_aMrSaRYpyntH_lSEdYDRsRwEtf9XwCq-LstAgE" alt="AMI logo" className="footer-logo" />
+              <img src="https://eoccruuzlqionthguigm.supabase.co/storage/v1/object/sign/photos/AMI%20logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MWM5ODA1Mi02ZWQxLTQ0NDUtYmJiYS00MWU4ZmZhZjBiZWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwaG90b3MvQU1JIGxvZ28ucG5nIiwiaWF0IjoxNzU0NDAzNzQ3LCJleHAiOjE3ODU5Mzk3NDd9.TcAVk3yxOkzeDcQ4a8aMNsSOHIU5JegD2Bq41In_T6E" alt="AMI logo" className="footer-logo" />
               <div className="footer-org">Association for Managers of Innovation</div>
               <div className="footer-address">P.O. Box 123 · Greensboro, NC · USA</div>
               <div className="footer-copyright">© 2025 AMI — All Rights Reserved</div>
